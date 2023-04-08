@@ -179,7 +179,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  fillPerReward: 4
 --- !u!212 &260384418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -885,7 +884,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  fillPerReward: 4
 --- !u!212 &1629229696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1004,8 +1002,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797973c7b064ec84d84ae1c32fc2855e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 40
-  fillPerSecond: 2
+  maxTime: 60
+  fillPerSecond: 1
 --- !u!114 &1653720077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,7 +1029,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1269,7 +1267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  fillPerReward: 4
 --- !u!212 &1974679109
 SpriteRenderer:
   m_ObjectHideFlags: 0
