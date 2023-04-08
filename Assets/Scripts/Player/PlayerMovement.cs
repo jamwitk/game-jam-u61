@@ -1,4 +1,5 @@
 ﻿using System;
+using Controllers;
 using UnityEngine;
 
 namespace Player
@@ -11,9 +12,10 @@ namespace Player
         {
             _rb = GetComponent<Rigidbody2D>();
         }
-
+        
         private void FixedUpdate()
         {
+            if(GameManager.Instance.IsGameOver) return;
             if (Input.touchCount > 0 || Input.GetMouseButton(0) && transform.position.y < 4f)
             {
                 _rb.AddForce(Vector2.up * jumpForce);
