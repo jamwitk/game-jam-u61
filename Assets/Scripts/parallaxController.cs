@@ -12,6 +12,7 @@ public class parallaxController : MonoBehaviour
      private GameObject[] backgrounds
          ;
      private Material[] mate;
+     private int a;
      private float[] backSpeed;
 
      private float farhestBack;
