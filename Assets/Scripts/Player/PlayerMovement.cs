@@ -9,9 +9,12 @@ namespace Player
         public int jumpForce;
         public int speed;
         private Rigidbody2D _rb;
+        
+        
         private void Start()
         {
             _rb = GetComponent<Rigidbody2D>();
+            
         }
         
         private void FixedUpdate()
@@ -24,5 +27,7 @@ namespace Player
             }
             _rb.AddForce(Vector2.right * speed);
         }
+
+       
     }
 }
