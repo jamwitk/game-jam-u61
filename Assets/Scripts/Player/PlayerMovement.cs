@@ -19,7 +19,7 @@ namespace Player
         
         private void FixedUpdate()
         {
-            if(GameManager.Instance.IsGameOver) return;
+//            if(GameManager.Instance.IsGameOver) return;
             if (Input.touchCount > 0 || Input.GetMouseButton(0) && transform.position.y < 4f)
             {
                 _rb.AddForce(Vector2.up * jumpForce);
