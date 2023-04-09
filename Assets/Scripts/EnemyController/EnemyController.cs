@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
 
     private bool isDead = false;
     private bool isAttacking = false;
-    private bool grounded;
+    private bool Grounded;
     private bool started;
     private bool Walking;
     private float lastAttackTime = 0f;
@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        grounded = true;
+        Grounded = true;
     }
 
     private void Update()
@@ -35,10 +35,10 @@ public class EnemyController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
 
         {
-            if (started && grounded)
+            if (started && Grounded)
             {
                 _animator.SetTrigger("Walk");
-                grounded = false;
+                Grounded = false;
                 Walking = true;
             }
             else
@@ -48,9 +48,9 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        if (grounded)
+        if (Grounded)
         {
-            _animator.SetBool("Grounded", grounded);
+            _animator.SetBool("Grounded", Grounded);
         }
     }
 
@@ -99,7 +99,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ground"))
         {
-            grounded = true;
+            Grounded = true;
         }
     }
 
