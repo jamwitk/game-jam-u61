@@ -379,21 +379,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Medieval icons_10: -973362967
-      Medieval icons_6: 369783506
-      Medieval icons_5: -55296467
-      Medieval icons_7: 936532887
-      Medieval icons_14: -160444309
-      Medieval icons_13: 2054086570
-      Medieval icons_4: -1422698809
-      Medieval icons_11: 1375740923
-      Medieval icons_12: -1681276701
-      Medieval icons_8: -1113575398
-      Medieval icons_2: 422217892
-      Medieval icons_9: 1711551498
-      Medieval icons_3: 1157279333
       Medieval icons_0: -1414715644
       Medieval icons_1: -70885522
+      Medieval icons_10: -973362967
+      Medieval icons_11: 1375740923
+      Medieval icons_12: -1681276701
+      Medieval icons_13: 2054086570
+      Medieval icons_14: -160444309
+      Medieval icons_2: 422217892
+      Medieval icons_3: 1157279333
+      Medieval icons_4: -1422698809
+      Medieval icons_5: -55296467
+      Medieval icons_6: 369783506
+      Medieval icons_7: 936532887
+      Medieval icons_8: -1113575398
+      Medieval icons_9: 1711551498
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
