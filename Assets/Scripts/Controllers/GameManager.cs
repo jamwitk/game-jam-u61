@@ -21,12 +21,17 @@ namespace Controllers
         {
             DeathScreen.SetActive(true);
         }
-        public void RestartGame()
+        public void OnClickRestartGame()
         {
             //any game state to prepare for restart
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             IsGameOver = false;
         }
-        
+        public void OnClickMainMenu()
+        {
+            //any game state to prepare for main menu
+            SceneManager.LoadScene(0);
+            IsGameOver = false;
+        }
     }
 }

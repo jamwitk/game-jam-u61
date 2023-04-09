@@ -486,6 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  maxHealth: 3
 --- !u!114 &765725562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1734,6 +1735,10 @@ PrefabInstance:
     - target: {fileID: 3549847086046303651, guid: 3c14258cd10387c4389bf4a861469da7, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7753652965683237811, guid: 3c14258cd10387c4389bf4a861469da7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c14258cd10387c4389bf4a861469da7, type: 3}
