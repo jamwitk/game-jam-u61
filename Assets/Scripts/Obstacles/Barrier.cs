@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using Controllers;
 using Player;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Barrier : MonoBehaviour
 {
     private AudioSource _audio;
     public int damage;
+    public float fillPerReward = 5f;
     private void Awake()
     {
         _audio= GetComponent<AudioSource>();
@@ -25,11 +26,14 @@ public class Barrier : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        GameObject.Find("Bar").GetComponent<Image>().fillAmount = Amount.fillAmount;
+        if (collision.gameObject.CompareTag("Player"))
         {
             //_audio.Play();
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
             Destroy(gameObject);
+            Amount.fillAmount += fillPerReward/60f;
+            Amount.fillAmount = Mathf.Clamp01(Amount.fillAmount);
         }
     }
 }
