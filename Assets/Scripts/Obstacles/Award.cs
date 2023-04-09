@@ -17,13 +17,14 @@ public class Award : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject.Find("Bar").GetComponent<Image>().fillAmount = Amount.fillAmount;
         if (collision.gameObject.CompareTag("Award"))
         {
             _audio.Play();
-            Destroy(collision.gameObject);
+            GameObject.Find("Bar").GetComponent<Image>().fillAmount = Amount.fillAmount;
             Amount.fillAmount += fillPerReward / 60f;
             Amount.fillAmount = Mathf.Clamp01(Amount.fillAmount);
+            Destroy(collision.gameObject);
+
         }
     }
 }

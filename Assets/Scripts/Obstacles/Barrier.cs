@@ -19,30 +19,19 @@ public class Barrier : MonoBehaviour
     }
     
 
-    private void Update()
-    {
-        if (transform.position.x < -10f)
-        {
-            Destroy(gameObject);
-        }
-        transform.Translate(Vector2.left * (Time.deltaTime * GameManager.Instance.obstacleSpeed));
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject.Find("Bar").GetComponent<Image>().fillAmount = Amount.fillAmount;
         
         if (collision.gameObject.CompareTag("Player"))
         {
             //_audio.Play();
-            collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            var pc = collision.gameObject.GetComponent<PlayerController>();
+            pc.TakeDamage(damage);
+            
+            
+            float liveAmount = pc.GetHealth() / (float) pc.maxHealth;
+            GameObject.Find("Live").GetComponent<Image>().fillAmount = liveAmount;
             Destroy(gameObject);
-            Amount.fillAmount += fillPerReward/60f;
-            Amount.fillAmount = Mathf.Clamp01(Amount.fillAmount);
-
-            GameObject.Find("Live").GetComponent<Image>().fillAmount = Amount.total_live;
-            Amount.total_live -= live_subtract / 3f;
-            Amount.total_live = Mathf.Clamp01(Amount.total_live);
         }
     }
 }
