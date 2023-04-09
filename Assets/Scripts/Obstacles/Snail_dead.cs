@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,19 +19,17 @@ public class Snail_dead : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (touched == true)
-        {
-            anim.SetBool("touched", true);
-        }
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            anim.SetBool("touched", true);
-            touched = true; 
+            anim.SetBool("IsDeath", true);
+            Invoke(nameof(DestroyAfter),0.6f);
         }
+    }
+
+    public void DestroyAfter()
+    {
+        Destroy(gameObject);
     }
 }
