@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5942087197565726889}
   - component: {fileID: 5942087197565726892}
   m_Layer: 0
-  m_Name: pixel_character_pale_red_0
+  m_Name: enemygirl
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
