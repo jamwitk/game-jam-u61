@@ -7,6 +7,7 @@ namespace Player
     public class PlayerMovement : MonoBehaviour
     {
         public int jumpForce;
+        public int speed;
         private Rigidbody2D _rb;
         private void Start()
         {
@@ -21,6 +22,7 @@ namespace Player
                 _rb.AddForce(Vector2.up * jumpForce);
                 //_rb.AddForce(Vector2.right * jumpForce); -- parallax kontrolünü denemek için bu yorum satırını açıp, yukarıdaki satırı yorum satırına alabilirsiniz.
             }
+            _rb.velocity = new Vector2(speed, _rb.velocity.y);
         }
     }
 }
