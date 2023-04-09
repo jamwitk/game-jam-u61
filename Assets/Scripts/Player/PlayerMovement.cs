@@ -7,6 +7,7 @@ namespace Player
     public class PlayerMovement : MonoBehaviour
     {
         public int jumpForce;
+        public int speed;
         private Rigidbody2D _rb;
         
         
@@ -22,8 +23,9 @@ namespace Player
             if (Input.touchCount > 0 || Input.GetMouseButton(0) && transform.position.y < 4f)
             {
                 _rb.AddForce(Vector2.up * jumpForce);
-                //_rb.AddForce(Vector2.right * jumpForce); -- parallax kontrolünü denemek için bu yorum satırını açıp, yukarıdaki satırı yorum satırına alabilirsiniz.
+                 // -- parallax kontrolünü denemek için bu yorum satırını açıp, yukarıdaki satırı yorum satırına alabilirsiniz.
             }
+            _rb.AddForce(Vector2.right * speed);
         }
 
        
