@@ -7,12 +7,15 @@ namespace Player
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private int health = 3;
-
+        public int maxHealth = 3;
         private void Start()
         {
             
         }
-
+        public int GetHealth()
+        {
+            return health;
+        }
         public void TakeDamage(int damage)
         {
             health -= damage;

@@ -6,7 +6,7 @@ namespace Controllers
 {
     public class GameManager : Singleton<GameManager>
     {
-        public float obstacleSpeed = 5f;
+        public GameObject DeathScreen;
         public bool IsGameOver { get; private set; }
         public delegate void OnPlayerDead();
         public event OnPlayerDead PlayerDeadEvent;
@@ -15,7 +15,11 @@ namespace Controllers
         {
             IsGameOver = true;
             PlayerDeadEvent?.Invoke();
-            //implementation
+            Invoke(nameof(ShowDeathScreen), 0.6f);
+        }
+        public void ShowDeathScreen()
+        {
+            DeathScreen.SetActive(true);
         }
         public void RestartGame()
         {
