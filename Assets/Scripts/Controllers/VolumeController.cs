@@ -7,7 +7,6 @@ public class VolumeController : MonoBehaviour
 {
     
     public AudioSource audioSource;
-    public AudioSource audioSource2;
     [SerializeField] public Slider soundSlider;
 
     public void Start()
@@ -19,6 +18,7 @@ public class VolumeController : MonoBehaviour
     public void OnSoundLevelChanged()
     {
         audioSource.volume = soundSlider.value;
-        audioSource2.volume= soundSlider.value;
+        PlayerPrefs.SetFloat("SoundLevel", soundSlider.value);
+        PlayerPrefs.Save();
     }
 }
