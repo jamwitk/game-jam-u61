@@ -27,5 +27,9 @@ public class Next_Level : MonoBehaviour
     {
         Application.Quit();
     }
+    public void BacktoGame()
+    {
+        SceneManager.LoadScene(2);
+    }
 
 }

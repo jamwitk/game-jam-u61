@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: f5003046f49cd014c8ffb347918fc938
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - DigitalDisco
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8f08da6657c307042bbefb81f8606782, type: 3}
+  - {fileID: 12800000, guid: 89143e46eba269b4f820e8b8f881fcba, type: 3}
+  - {fileID: 12800000, guid: 2c859ea2103c2a349ae096d3a0545b7d, type: 3}
+  - {fileID: 12800000, guid: 2b96e80230d1c884e915b9acd25d514a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

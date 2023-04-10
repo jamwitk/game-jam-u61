@@ -16,10 +16,11 @@ namespace Controllers
             IsGameOver = true;
             PlayerDeadEvent?.Invoke();
             Invoke(nameof(ShowDeathScreen), 0.6f);
+            
         }
         public void ShowDeathScreen()
         {
-            DeathScreen.SetActive(true);
+            SceneManager.LoadScene(5);
         }
         public void OnClickRestartGame()
         {
