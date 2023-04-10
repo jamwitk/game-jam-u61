@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e0ff14cd80d10de4a9145e6c9a4ed854
+guid: 0499337d809858448b939a074ea2b382
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fly-Sheet_0
+      name: flying-creature-cycle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 971edce97ea49604f94abd471e9b8693
-      internalID: -615244704
+      spriteID: 71f202124528c5b458a781877d20a08a
+      internalID: -500335447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fly-Sheet_1
+      name: flying-creature-cycle_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4112c935da895f34eb9e19a603f0c553
+      internalID: -1040883937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying-creature-cycle_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +161,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50a3af7868ffe3749bc3027c9b03985a
-      internalID: -1215280253
+      spriteID: 414b31c45b3cd224caa0752f31e30e1e
+      internalID: -1382956530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fly-Sheet_2
+      name: flying-creature-cycle_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241220e4ecb470b4d9b899bdd6180a5e
+      internalID: 1372390824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying-creature-cycle_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3e4002d2307b344b922b723a5315e1f
-      internalID: -1861969538
+      spriteID: 9f0dd44b8cc6da94ca7e57a6839c5c90
+      internalID: -1743844775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fly-Sheet_3
+      name: flying-creature-cycle_5
       rect:
         serializedVersion: 2
-        x: 192
+        x: 160
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +224,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 513bc5b9a9a2c7d45bff36ffd5e355ee
-      internalID: 2022485807
+      spriteID: c064324bbe153bf4eb910e5b51286c0c
+      internalID: -1534899164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flying-creature-cycle_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb978c087d687de43a5745e5d665b5a8
+      internalID: -1083015130
       vertices: []
       indices: 
       edges: []
@@ -199,10 +262,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fly-Sheet_0: -615244704
-      Fly-Sheet_1: -1215280253
-      Fly-Sheet_2: -1861969538
-      Fly-Sheet_3: 2022485807
+      flying-creature-cycle_0: -500335447
+      flying-creature-cycle_1: -1040883937
+      flying-creature-cycle_2: -1382956530
+      flying-creature-cycle_3: 1372390824
+      flying-creature-cycle_4: -1743844775
+      flying-creature-cycle_5: -1534899164
+      flying-creature-cycle_6: -1083015130
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
