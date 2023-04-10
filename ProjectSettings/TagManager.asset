@@ -8,6 +8,7 @@ TagManager:
   - Award
   - Ground
   - enemy
+  - book
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - layout1
   - Ground
   - enemy
-  - 
-  - 
-  - 
+  - bg
+  - mg
+  - fg
   - 
   - 
   - 

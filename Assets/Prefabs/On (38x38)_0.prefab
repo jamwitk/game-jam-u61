@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6247261106299395575}
   - component: {fileID: 6247261106299395568}
   - component: {fileID: 6247261106299395569}
+  - component: {fileID: 976328631}
   m_Layer: 0
   m_Name: On (38x38)_0
   m_TagString: Barrier
@@ -123,3 +124,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.19
+--- !u!114 &976328631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6247261106299395570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05f34e85d04dc44096df448f59096f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  fillPerReward: 5
+  maxlive: 3
+  live_subtract: 1
